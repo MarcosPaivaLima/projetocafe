@@ -1,0 +1,143 @@
+.pai{
+   display: flex;
+   justify-content: center;
+   }
+   .container{
+      display: flex;
+      width:1200px;
+   }
+   .sub-container{
+      width: 100%;
+      display: flex;
+   }
+   .left{
+   background-color: burlywood;
+   width: 50%;
+   height: 500px;
+   border: 2px solid brown;
+   padding-left: 10px;
+    font-family: initial;
+    font-size: 20px; 
+   }
+   .right{    
+   background-color: burlywood;    
+   width: 50%;
+   height: 500px;
+   border: 2px solid brown;
+   padding-left: 10px;
+    font-family: initial;
+    font-size: 20px; 
+   }
+   h1{
+      background-color: white;
+      color: brown; 
+      text-align: center;
+   }
+   h3{
+    color: burlywood;   
+   }
+   body{
+   background-color: #a05018;
+   }
+   li{
+    color: burlywood;
+    font-family: initial;
+    font-size: 20px;   
+   }
+   img{
+    width: 300px;
+    height: 200px;  
+    padding-left: 10px;
+   }
+   .donos{
+    width: 150px;
+    height:150px;
+    padding-top: 10px;  
+   }
+   .fotos{
+      display: flex;
+      justify-content: space-around;
+   }
+   .plant{
+      width: 200px;
+      height: 150px;
+   }
+   /* celular */
+   @media(max-width: 500px){
+      
+      .container{
+         width: 300px;
+      }
+      .sub-container{
+         flex-direction: column;
+      }
+      .right{
+         width: 98%;
+         height: auto;
+         padding: 10px;
+      }
+      .left{
+         width: 98%;
+         height: auto;
+         padding: 10px;
+      }
+      .fotos{
+         display: flex;
+         flex-direction: column;
+      }
+      .plant{
+         display: flex;
+         flex-direction: column;
+         margin: 10px;
+         width: 250px;
+         height: 230px;
+      }
+      .donos{
+         width: 250px;
+         height: 230px;
+      }
+      li{
+         font-size: 18px;
+      }
+      h1{
+         width: 350px;
+      }
+   }
+   /* tablet */
+   @media (min-width: 501px) and (max-width: 1368px) {
+      .container{
+       width: 100%;  
+      }   
+      .sub-container{
+         flex-direction: row;
+      }
+      .right{
+         width: 98%;
+         height: auto;
+         
+      }
+      .left{
+      width: 98%;
+      height: auto;
+         
+      }
+      .fotos{
+      display: flex;
+      flex-direction: row;
+      width: 100%;   
+      
+      }
+      .plant{
+       display: flex;
+       flex-direction: row;
+       padding-bottom: 20px;
+   
+      }
+      .donos{
+         width: 150px;
+         height: 130px;
+         padding-right: 20px;
+      }
+      h1{
+      }
+   }
